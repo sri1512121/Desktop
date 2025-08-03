@@ -1,45 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <mata name="viewport" content="width=device-width,initial-scale=1.0">
-     <title>Personal Portfolio Website Using HTML & CSS</title>
-     <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sri Varshini R | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-     <nav class="navbar">
-          <a href="#" class="logo">portfolio.</a>
-          <ul>
-               <li class="active"><a href="#">Home</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Portfolio</a></li>
-               <li><a href="#">Service</a></li>
-               <li><a href="#">Contact</a></li>
-               <h1> new name</h1>
+  <header>
+    <div class="container">
+      <h1 class="logo">Sri Varshini R</h1>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-          </ul>
-     </nav>
+  <section id="hero">
+    <div class="hero-text">
+      <h2>Hello, I'm Sri Varshini R</h2>
+      <p>Aspiring Web Developer | Open Source Enthusiast</p>
+      <a href="#projects" class="btn">See My Work</a>
+    </div>
+  </section>
 
-     <section class="home">
-          <div class="home-info">
-               <h1>Lucius Meshach</h1>
-               <h2>I'm a Fronten Developer</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beate aut minus,itaque velit nisi exercitationem alias dolares id officils similique hicodit eaque ipsam. Aperiam voluptatum blanditiis sint pariatur totam</p>
-               <div class="btn-sci"></div>
-          </div>
-     </section>
-     
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a web developer passionate about building beautiful and functional web applications. I enjoy learning new technologies and contributing to open-source projects.</p>
+  </section>
 
-                    
-                    
-                    
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Git</span>
+      <span>Node.js</span>
+    </div>
+  </section>
 
-               
-          
-     
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <img src="images/project1.jpg" alt="Project 1" />
+      <div>
+        <h3>Project One</h3>
+        <p>A web app that helps users do something amazing. Built with HTML, CSS, and JavaScript.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
 
+    <div class="project-card">
+      <img src="images/project2.jpg" alt="Project 2" />
+      <div>
+        <h3>Project Two</h3>
+        <p>An interactive dashboard using React and Chart.js. Fully responsive and mobile-friendly.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name. Built with ❤ using HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
